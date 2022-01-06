@@ -1,4 +1,4 @@
-//luogu P3367
+//luogu P3367 【模板】并查集
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 #define MAXN 11000
