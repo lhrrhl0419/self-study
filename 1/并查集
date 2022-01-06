@@ -1,3 +1,4 @@
+//luogu P3367
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 #define MAXN 11000
