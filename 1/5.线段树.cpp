@@ -20,7 +20,7 @@ void build_tree(int p, int l, int r)
 	tr[p].sum = tr[p << 1].sum + tr[(p << 1) + 1].sum;
 	return;
 }
-void pushdown(int p,int l,int m,int r)
+void pushdown(int p, int l, int m, int r)
 {
 	tr[p << 1].lazy += tr[p].lazy;
 	tr[(p << 1) + 1].lazy += tr[p].lazy;
@@ -37,7 +37,7 @@ void add(int p, int l, int r, int el, int er, long long k)
 		return;
 	}
 	int m = (l + r) >> 1;
-	pushdown(p,l,m,r);
+	pushdown(p, l, m, r);
 	tr[p].sum += ((long long)er - el + 1) * k;
 	if (l == el && r == er)
 	{
@@ -50,15 +50,15 @@ void add(int p, int l, int r, int el, int er, long long k)
 }
 long long sum(int p, int l, int r, int el, int er)
 {
-	if (el==l && er==r)
+	if (el == l && er == r)
 	{
 		return tr[p].sum;
 	}
 	int m = (l + r) >> 1;
-	pushdown(p,l,m,r);
+	pushdown(p, l, m, r);
 	long long temp = 0;
-	if (el <= m)temp+=sum(p << 1, l, m, el, min(m, er));
-	if (er > m)temp+=sum((p << 1) + 1, m + 1, r, max(el, m + 1), er);
+	if (el <= m)temp += sum(p << 1, l, m, el, min(m, er));
+	if (er > m)temp += sum((p << 1) + 1, m + 1, r, max(el, m + 1), er);
 	return temp;
 }
 int main()
