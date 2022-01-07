@@ -4,7 +4,7 @@
 #include<cstring>
 #define MAXN 500010
 #define MAXLOGN 20
-struct node { int next = 0, to; } point[MAXN << 1];
+struct node { int next, to; } point[MAXN << 1];
 int head[MAXN];
 int edgenum = 0;
 int lca[MAXN][MAXLOGN];
