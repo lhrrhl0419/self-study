@@ -4,7 +4,7 @@
 #include<cstring>
 #define MAXN 500010
 #define MAXLOGN 20
-struct node { int next, to; } point[MAXN << 1];
+struct e { int next, to; } edge[MAXN << 1];
 int head[MAXN];
 int edgenum = 0;
 int lca[MAXN][MAXLOGN];
@@ -13,9 +13,9 @@ int n, m, s, x, y;
 using namespace std;
 void addedge(int f, int t)
 {
-	point[++edgenum] = { head[f],t };
+	edge[++edgenum] = { head[f],t };
 	head[f] = edgenum;
-	point[++edgenum] = { head[t],f };
+	edge[++edgenum] = { head[t],f };
 	head[t] = edgenum;
 	return;
 }
@@ -24,11 +24,11 @@ void cal_lca(int p)
 	dlist[depth[p]] = p;
 	for (int i = 0; (1 << i) <= depth[p]; i++)
 		lca[p][i] = dlist[depth[p] - (1 << i)];
-	for (int i = head[p]; i; i = point[i].next)
+	for (int i = head[p]; i; i = edge[i].next)
 	{
-		if (depth[p] > 0 && point[i].to == dlist[depth[p] - 1])continue;
-		depth[point[i].to] = depth[p] + 1;
-		cal_lca(point[i].to);
+		if (depth[p] > 0 && edge[i].to == dlist[depth[p] - 1])continue;
+		depth[edge[i].to] = depth[p] + 1;
+		cal_lca(edge[i].to);
 	}
 	return;
 }
