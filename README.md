@@ -8,6 +8,7 @@
 6. KMP
 7. LCA
 8. 负环(SPFA)
-9. 最短路(dijkstra)
+9. 单源最短路(dijkstra)
+10. 全源最短路(johnson)
 ## 2 相关应用程序
 1. vim
