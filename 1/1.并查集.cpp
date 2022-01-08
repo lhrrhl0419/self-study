@@ -8,8 +8,7 @@ int fa[MAXN];
 int find_fa(int x)
 {
 	if (fa[x] == x)return x;
-	int temp = find_fa(fa[x]);
-	fa[x] = temp;
+	fa[x] = find_fa(fa[x]); 
 	return temp;
 }
 int main()
