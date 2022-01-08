@@ -5,7 +5,10 @@
    * git init 初始化仓库
    * git add x.txt 将文件添加到仓库
    * git commit -m "important commit" 将修改提交到仓库
+   * git reset HEAD~(数字) 取消相应数量commit
    * git log 查阅仓库日志
+   * git show 显示修改
+   * git restore 恢复文件
    * git branch 查看git仓库分支情况
    * git branch snd 建立新分支
    * git checkout snd 切换到分支
