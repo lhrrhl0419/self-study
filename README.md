@@ -16,3 +16,4 @@
 1. vim
 2. git
 3. cmake
+4. matlab
