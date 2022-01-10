@@ -18,4 +18,5 @@
 3. cmake
 4. matlab
 ## 3 机器学习
-1. TML(Trustworthy Machine Learning), Stanford CS 329T
+1. Machine Learning, Stanford CS 229
+2. TML(Trustworthy Machine Learning), Stanford CS 329T
