@@ -21,3 +21,4 @@
 1. Machine Learning, Stanford CS 229
 2. Convolutional Neural Networks for Visual Recognition, Stanford CS231n
 3. TML(Trustworthy Machine Learning), Stanford CS 329T
+4. Software Construction, MIT 6.031
