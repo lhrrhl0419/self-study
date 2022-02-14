@@ -1,5 +1,7 @@
 # self-study
+
 ## 1 数据结构与算法  
+
 1. 并查集
 2. 线性筛素数  
 3. 堆  
@@ -12,13 +14,10 @@
 10. 全源最短路(johnson)
 11. 缩点
 12. 左偏树
+
 ## 2 相关应用程序
+
 1. vim
 2. git
 3. cmake
 4. matlab
-## 3 机器学习
-1. Machine Learning, Stanford CS 229
-2. Convolutional Neural Networks for Visual Recognition, Stanford CS231n
-3. TML(Trustworthy Machine Learning), Stanford CS 329T
-4. Software Construction, MIT 6.031
