@@ -21,3 +21,9 @@
 2. git
 3. cmake
 4. matlab
+
+## 3 学习课程
+
+1. stanford cs231n computer vision
+2. mit 6.031 software construction
+3. stanford cs206l c++
